@@ -1,0 +1,16 @@
+~~~~~~~~~~~~~~~~~SSH~~~~~~~~~~~~~~~~~
+Connecting to RaspberyPi from computer
+	ssh pi@<IP_ADDRESS>
+		eg: ssh pi@192.168.43.86
+
+Copying files from computer to RaspberryPi
+	scp /path/tp/file pi@<IP_ADDRESS>:/path/to/destination
+		eg: scp dash-arpsniffer.py pi@192.168.43.86:/home/pi/Desktop
+
+Copying folders from computer to RaspberryPi
+	scp -r /path/tp/foler pi@<IP_ADDRESS>:/path/to/destination
+		eg: scp -r dash-arpsniffer.py pi@192.168.43.86:/home/pi/Desktop
+
+Copying files from RaspberryPi to the current folder computer
+	scp pi@<IP_ADDRESS>:/path/to/file /path/to/destination
+		eg: scp pi@192.168.43.86:/home/pi/Desktop/dash-arpsniffer.py .
